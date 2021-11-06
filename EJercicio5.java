@@ -11,19 +11,20 @@ import java.util.Scanner;
  *
  * @author jorge
  */
-public class Ejercicio1 {
+public class EJercicio5 {
     public static void main(String[] args) {
-      int[] vector = new int[5];
-        
-     Scanner lector = new Scanner(System.in);
-        
-        
-        for (int i = 0; i <5; i++) {
-            System.out.println("Ingrear Numero");
-            vector[i]=lector.nextInt();
-            
+        int posicionN=0;
+        System.out.println("Ingresar Tamaño");
+        Scanner lector = new Scanner(System.in);
+        posicionN=lector.nextInt();
+        String [] vector = new String[posicionN];
+        for (int i = 0; i < vector.length; i++) {
+            System.out.println("Ingresar Nombre");
+            vector[i]=lector.next();            
         }
-        
         System.out.println(Arrays.toString(vector));
+        
+
+        
     }
 }
