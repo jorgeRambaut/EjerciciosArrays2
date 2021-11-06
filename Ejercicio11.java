@@ -42,6 +42,7 @@ public class Ejercicio11 {
         System.out.println("Ingresar Posicion para poner su valor a 0");
         Scanner lector = new Scanner(System.in);
         pos=lector.nextInt();
+        //restamos uno para  evitar out of bounds
         poneraCero(arrayNumeros,pos-1);
         System.out.println(Arrays.toString(arrayNumeros));
 
